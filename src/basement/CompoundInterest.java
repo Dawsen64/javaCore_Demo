@@ -4,7 +4,7 @@ package basement;
  * @Author:  zqiusen@qq.com
  * @Date: 2022/2/12 21:27
  */
-
+//test合并
 public class CompoundInterest {
     //利率rat
     double[] rat = {0.1, 0.11, 0.12, 0.13, 0.14, 0.15};
