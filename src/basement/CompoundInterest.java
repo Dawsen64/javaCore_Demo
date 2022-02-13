@@ -19,6 +19,7 @@ public class CompoundInterest {
             table[0][i] = 10000;
         }
     }
+
     //根据数据建表
     void creatTable()
     {
