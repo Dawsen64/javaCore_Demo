@@ -34,9 +34,9 @@ public class CompoundInterest {
     {
         for (double[] erow: table)
         {
-            for (double ele: erow)
+            for (double value: erow)
             {
-                System.out.printf("%.2f   ", ele);
+                System.out.printf("%.2f   ", value);
             }
             System.out.println();
         }
