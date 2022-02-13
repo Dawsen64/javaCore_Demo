@@ -49,6 +49,6 @@ public class CompoundInterest {
         demo.creatTable();
         demo.printTable();
     }
-    //测试提取拉取的功能
+    //02/13测试提取拉取的功能
     //增加
 }
