@@ -13,6 +13,7 @@ public class CompoundInterest {
     final short icolumn = 6;
     double[][] table = new double[irow][icolumn];
     //构造方法，初始化第一行
+
     CompoundInterest(){
         for (int i =0; i < icolumn; i++)
         {
