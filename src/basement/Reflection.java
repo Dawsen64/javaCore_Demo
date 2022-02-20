@@ -13,7 +13,7 @@ public class Reflection {
 //        printClassInfo(int.class);
     }
 //    @SuppressWarnings("unchecked")
-    static void printClassInfo(Class<String> cls) {
+    static void printClassInfo(Class cls) {
         System.out.println("Class name: " + cls.getName());
         System.out.println("Simple name: " + cls.getSimpleName());
         if (cls.getPackage() != null) {
