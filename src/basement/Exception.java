@@ -7,7 +7,7 @@ import java.io.IOException;
  * @Date: 2022/2/15 12:08
  */
 
-public class Exception {
+public class Exception extends Throwable {
     private void tryTest(int a){
         try {
             if (a == 1) {
