@@ -39,11 +39,14 @@ class Solution02 {
     public int addDigits(int num) {
         if(num < 10)
             return num;
-        while (num >= 10) {
-            String numstr = String.valueOf(num);
-            num = 0;
-            for (int i = 0; i < numstr.length(); i++) {
-                num += numstr.charAt(i) - '0';
+        int sum = 0;
+        while (num >= 10 || sum != 0) {
+            sum += num % 10;
+            num /= 10;
+            if(num == 0)
+            {
+                num = sum;
+                sum = 0;
             }
         }
         return num;
@@ -53,6 +56,6 @@ class Solution02 {
 public class T258{
     public static void main(String[] args){
         Solution02 sol = new Solution02();
-        System.out.println(sol.addDigits(10));
+        System.out.println(sol.addDigits(2310));
     }
 }
