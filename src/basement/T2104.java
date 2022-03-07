@@ -10,9 +10,9 @@ import static java.lang.Math.*;
  */
 public class T2104 {
     public static void main(String[] args) {
-        Solution solution = new T2104().new Solution();
+        Solution01 solution = new T2104().new Solution01();
         int[] nums = {1,2,3};
-        System.out.println(solution.subArrayRanges(nums));
+        System.out.println(solution.convertToBase7(-7));
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 //    class Solution {
@@ -44,6 +44,24 @@ public class T2104 {
                 }
             }
             return sum;
+        }
+    }
+    class Solution01 {
+        public String convertToBase7(int num) {
+            StringBuilder s = new StringBuilder();
+            int isF = 0;
+            if(num < 0)
+            {
+                num = -num;
+                isF = 1;
+            }
+            while(num != 0){
+                s.append(num%7);
+                num = num/7;
+            }
+            if (isF == 1)
+                s.append("-");
+            return s.reverse().toString();
         }
     }
 }
